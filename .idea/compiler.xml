@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="gram_ticket_trade" />
+        <module name="gram_ware" />
+        <module name="gram_dependencies" />
+        <module name="gram_common" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="gram_common" target="8" />
+      <module name="gram_dependencies" target="8" />
+      <module name="gram_run" target="8" />
+      <module name="gram_ticket_trade" target="8" />
+      <module name="gram_ware" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

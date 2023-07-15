@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.gram</groupId>
+    <artifactId>gram_run</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>gram_dependencies</module>
+        <module>gram_common</module>
+        <module>gram_ware</module>
+        <module>gram_ticket_trade</module>
+    </modules>
+
+    <!--聚合工程,打包方式:pom-->
+    <packaging>pom</packaging>
+    <!-- 版本管理 -->
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <java.version>1.8</java.version>
+        <spring.boot.version>2.6.3</spring.boot.version>
+        <spring.cloud.version>2021.0.1</spring.cloud.version>
+        <spring.cloud.alibaba.version>2021.0.1.0</spring.cloud.alibaba.version>
+        <!-- 统一管理hub-example的版本,在子模块直接使用此版本即可-->
+        <hub.example.version>1.0-SNAPSHOT</hub.example.version>
+        <spring.boot.maven.plugin.version>2.6.3</spring.boot.maven.plugin.version>
+        <mysql.version>8.0.23</mysql.version>
+        <druid.version>1.2.5</druid.version>
+        <mybatis.version>2.2.0</mybatis.version>
+        <lombok.version>1.18.18</lombok.version>
+        <fastjson.version>1.2.83</fastjson.version>
+        <hutool.version>5.7.22</hutool.version>
+        <commons.lang3.version>3.12.0</commons.lang3.version>
+        <commons.io.version>2.11.0</commons.io.version>
+    </properties>
+    <!-- 核心依赖   -->
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring.boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring.cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>${spring.cloud.alibaba.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+    <build>
+        <!-- yml文件读取pom文件的标签值 -->
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+        <plugins>
+            <!-- 配置打包插件 -->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>${spring.boot.maven.plugin.version}</version>
+                <configuration>
+                    <fork>true</fork>
+                    <addResources>true</addResources>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <profiles>
+        <profile>
+            <!-- yml配置文件环境切换: dev/test/prod -->
+            <id>env</id>
+            <properties>
+                <profiles.active>dev</profiles.active>
+            </properties>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+        </profile>
+    </profiles>
+
+</project>
