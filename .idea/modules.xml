@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/gram_common/gram_common.iml" filepath="$PROJECT_DIR$/gram_common/gram_common.iml" />
       <module fileurl="file://$PROJECT_DIR$/gram_dependencies/gram_dependencies.iml" filepath="$PROJECT_DIR$/gram_dependencies/gram_dependencies.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gram_problem_review/gram_problem_review.iml" filepath="$PROJECT_DIR$/gram_problem_review/gram_problem_review.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/gram_run.iml" filepath="$PROJECT_DIR$/.idea/gram_run.iml" />
       <module fileurl="file://$PROJECT_DIR$/gram_ticket_trade/gram_ticket_trade.iml" filepath="$PROJECT_DIR$/gram_ticket_trade/gram_ticket_trade.iml" />
       <module fileurl="file://$PROJECT_DIR$/gram_ware/gram_ware.iml" filepath="$PROJECT_DIR$/gram_ware/gram_ware.iml" />

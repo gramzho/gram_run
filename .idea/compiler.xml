@@ -2,6 +2,7 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -10,14 +11,23 @@
         <module name="gram_ware" />
         <module name="gram_dependencies" />
         <module name="gram_common" />
+        <module name="gram_problem_review" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="gram_common" target="8" />
       <module name="gram_dependencies" target="8" />
+      <module name="gram_problem_review" target="8" />
       <module name="gram_run" target="8" />
+      <module name="gram_template" target="8" />
       <module name="gram_ticket_trade" target="8" />
       <module name="gram_ware" target="8" />
+      <module name="untitled" target="8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="gram_template" options="-parameters" />
+    </option>
   </component>
 </project>
