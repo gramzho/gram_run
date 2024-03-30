@@ -8,6 +8,8 @@
         <option value="$PROJECT_DIR$/gram_ticket_trade/pom.xml" />
         <option value="$PROJECT_DIR$/gram_ware/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/gram_camunda/pom.xml" />
+        <option value="$PROJECT_DIR$/gram_daliy_study/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

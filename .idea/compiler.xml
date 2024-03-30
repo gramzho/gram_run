@@ -8,14 +8,18 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="gram_ticket_trade" />
-        <module name="gram_ware" />
+        <module name="gram_camunda" />
+        <module name="gram_daliy_study" />
         <module name="gram_dependencies" />
         <module name="gram_common" />
         <module name="gram_problem_review" />
+        <module name="gram_ware" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="gram_camunda" target="8" />
       <module name="gram_common" target="8" />
+      <module name="gram_daliy_study" target="21" />
       <module name="gram_dependencies" target="8" />
       <module name="gram_problem_review" target="8" />
       <module name="gram_run" target="8" />
@@ -27,6 +31,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="gram_daliy_study" options="-parameters" />
       <module name="gram_template" options="-parameters" />
     </option>
   </component>

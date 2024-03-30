@@ -13,6 +13,7 @@
         <module>gram_ware</module>
         <module>gram_ticket_trade</module>
         <module>gram_problem_review</module>
+        <module>gram_camunda</module>
     </modules>
 
     <!--聚合工程,打包方式:pom-->
