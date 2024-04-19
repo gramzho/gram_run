@@ -10,7 +10,7 @@ import java.lang.reflect.Field;
  * @Author:zotij
  * @Date: 2024/3/30  15:32
  */
-public class Main {
+public class AnnotationMain {
     public static void main(String[] args) {
 
         Class<?> studentClass = Student.class;

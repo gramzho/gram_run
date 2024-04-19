@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/gram_algorithm/gram_algorithm.iml" filepath="$PROJECT_DIR$/gram_algorithm/gram_algorithm.iml" />
       <module fileurl="file://$PROJECT_DIR$/gram_camunda/gram_camunda.iml" filepath="$PROJECT_DIR$/gram_camunda/gram_camunda.iml" />
       <module fileurl="file://$PROJECT_DIR$/gram_common/gram_common.iml" filepath="$PROJECT_DIR$/gram_common/gram_common.iml" />
       <module fileurl="file://$PROJECT_DIR$/gram_daliy_study/gram_daliy_study.iml" filepath="$PROJECT_DIR$/gram_daliy_study/gram_daliy_study.iml" />

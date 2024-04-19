@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="gram_ticket_trade" />
         <module name="gram_camunda" />
+        <module name="gram_algorithm" />
         <module name="gram_daliy_study" />
         <module name="gram_dependencies" />
         <module name="gram_common" />
@@ -17,6 +18,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="gram_algorithm" target="1.8" />
       <module name="gram_camunda" target="8" />
       <module name="gram_common" target="8" />
       <module name="gram_daliy_study" target="8" />
@@ -31,6 +33,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="gram_algorithm" options="-parameters" />
       <module name="gram_daliy_study" options="" />
       <module name="gram_template" options="-parameters" />
     </option>
