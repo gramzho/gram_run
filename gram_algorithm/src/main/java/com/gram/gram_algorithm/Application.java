@@ -17,5 +17,6 @@ public class Application {
     private void test() {
         String str = "test01";
         System.out.println("测试方法：{}");
+
     }
 }

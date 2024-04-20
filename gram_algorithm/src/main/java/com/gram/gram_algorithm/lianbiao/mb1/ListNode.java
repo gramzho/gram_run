@@ -1,7 +1,7 @@
 package com.gram.gram_algorithm.lianbiao.mb1;
 
 /**
- * @Author:zotij
+ * @Author: zotij
  * @Date: 2024/4/19  21:27
  */
 public class ListNode {

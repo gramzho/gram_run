@@ -7,7 +7,7 @@ import java.lang.annotation.Annotation;
 import java.lang.reflect.Field;
 
 /**
- * @Author:zotij
+ * @Author: zotij
  * @Date: 2024/3/30  15:32
  */
 public class AnnotationMain {

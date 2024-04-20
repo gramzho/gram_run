@@ -4,7 +4,7 @@ import com.alibaba.fastjson2.annotation.JSONField;
 import com.gram.gram_daliy_study.annotaion_usage.annotation.MyAnnotation;
 
 /**
- * @Author:zotij
+ * @Author: zotij
  * @Date: 2024/3/30  15:08
  */
 public class Student {
