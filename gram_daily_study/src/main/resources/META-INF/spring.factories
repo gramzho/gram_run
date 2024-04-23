@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.gram.gram_daily_study.day_20240423.MyAutoConfiguration

@@ -8,6 +8,7 @@ public class SqrtX {
     public static void main(String[] args) {
         X();
         System.out.println(binarySearch(586));
+        System.out.println(newTon(586));
     }
 
     public static void X() {
@@ -38,7 +39,22 @@ public class SqrtX {
     }
 
     // 牛顿迭代
-    public static int newton(int x) {
-        return -1;
+    public static int newTon(int x) {
+        if (x == 0) {
+            return 0;
+        }
+
+        return (int) sqrt(x, x);
+    }
+
+    public static double sqrt(double i, int x) {
+        double res = (i + x/i) /2;
+        if (res == i) {
+            System.out.println(i);
+            return i;
+
+        } else {
+            return sqrt(res, x);
+        }
     }
 }
